@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi"
+    app:startDestination="@id/fragmentTareas">
+
+    <fragment
+        android:id="@+id/fragmentTareas"
+        android:name="com.example.bbdd_app.ui.FragmentTareas"
+        android:label="Listado de Tareas"
+        tools:layout="@layout/fragment_tareas">
+        <action
+            android:id="@+id/action_fragmentTareas_to_fragmentCrear"
+            app:destination="@id/fragmentCrear" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCrear"
+        android:name="com.example.bbdd_app.ui.FragmentCrear"
+        android:label="Crear Tarea"
+        tools:layout="@layout/fragment_crear" />
+</navigation>
